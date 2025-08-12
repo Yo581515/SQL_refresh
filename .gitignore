@@ -1,0 +1,15 @@
+.vscode/
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+*.log
+*.sql~
+__pycache__/
+.env
+.DS_Store
+*.mdf
+*.ldf
+*.sdf
+*.db-shm
+*.db-wal
