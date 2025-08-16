@@ -15,8 +15,9 @@ ORDER BY paid_amount DESC
 LIMIT 5;
 
 -- OWN Challenges
-SELECT p.customer_id, c.first_name , SUM(p.amount) as paid_amount
-FROM payment as p LEFT OUTER JOIN customer as c ON p.customer_id = c.customer_id
-GROUP BY p.customer_id, c.first_name
-ORDER BY paid_amount DESC
+SELECT p.customer_id, c.first_name, c.last_name, SUM(p.amount) as paid_amount
+FROM payment as p LEFT OUTER JOIN customer as c 
+ON p.customer_id = c.customer_id
+GROUP BY p.customer_id, c.first_name, c.last_name
+ORDER BY paid_amount ASC
 LIMIT 5;
