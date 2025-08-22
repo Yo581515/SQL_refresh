@@ -13,3 +13,4 @@ __pycache__/
 *.sdf
 *.db-shm
 *.db-wal
+sql_refresh_env/
